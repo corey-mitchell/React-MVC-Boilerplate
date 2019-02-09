@@ -1,0 +1,36 @@
+{
+  "name": "react-mvc-boilerplate",
+  "version": "1.0.0",
+  "description": "A Boilerplate for React using a MVC file structure",
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && yarn install",
+    "build": "cd client && yarn run build",
+    "heroku-postbuild": "cd client && yarn install && yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corey-mitchell/React-MVC-Boilerplate.git"
+  },
+  "keywords": [
+    "React",
+    "MVC",
+    "Boilerplate"
+  ],
+  "author": "Corey Mitchell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/corey-mitchell/React-MVC-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/corey-mitchell/React-MVC-Boilerplate#readme",
+  "dependencies": {
+    "create-react-app": "^2.1.3",
+    "express": "^4.16.4",
+    "global": "^4.3.2",
+    "mongoose": "^5.4.10"
+  }
+}
