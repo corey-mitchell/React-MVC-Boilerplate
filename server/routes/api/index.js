@@ -1,6 +1,6 @@
 // This file houses all of the individual routers and exports them to be referenced elsewhere
 
-// Require Express
+// Require Express Router
 const router = require("express").Router();
 
 // Require Routes here==================
