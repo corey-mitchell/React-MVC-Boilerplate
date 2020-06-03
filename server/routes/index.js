@@ -27,10 +27,19 @@ router.use("/api", apiRoutes);
 
 // ===================================================
 
-// If no API routes are hit, send the React app
-router.use(function(req, res) {
-  res.sendFile(path.join(__dirname, "../../client/public/index.html"));
-});
+// When an unknown route is hit, send the React app
+// If application is in production,
+if(process.env.NODE_ENV === 'production') {
+  // Send build index.html
+  router.use(function(req, res) {
+    res.sendFile(path.join(__dirname, "../../client/build/index.html"));
+  });
+} else { // else if the application is in development,
+  // Send the public index.html
+  router.use(function(req, res) {
+    res.sendFile(path.join(__dirname, "../../client/public/index.html"));
+  });
+};
 
 // Exports Router
 module.exports = router;
