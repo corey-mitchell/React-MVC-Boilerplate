@@ -56,7 +56,7 @@ I utilize Yarn as my package manager rather than Node's standard npm. So I will 
 2. CD into the application's root directory
 
     ```
-    cd Reat-MVC-Boilerplate
+    cd React-MVC-Boilerplate
     ```
 
 3. Once inside of the application's root directory, install the API server's depencencies. To do so, run:
@@ -65,7 +65,7 @@ I utilize Yarn as my package manager rather than Node's standard npm. So I will 
     yarn install
     ```
 
-4. After you API's dependencies are installed, it's time to install your Client server's dependencies. To do so, cd into the client folder and run yarn install again. Like so:
+4. After your API's dependencies are installed, it's time to install your Client server's dependencies. To do so, cd into the client folder and run yarn install again. Like so:
 
     ```
     cd client
