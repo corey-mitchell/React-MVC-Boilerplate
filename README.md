@@ -1,13 +1,14 @@
 # React-MVC-Boilerplate
+
 A MVC (Model Views Controller) Boilerplate that uses React.js.
 
 ## About This Boilerplate
 
-This is a MERN stack application which utilizes a MVC (Model Views Controller) architectural pattern. It is designed for the Client Server and API Server to run on two separate ports simultaneously. The boilerplate mostly focuses on the API Server file structure, while the Client Server was created utilizing [create-react-app](https://github.com/facebook/create-react-app#creating-an-app).
+This is a MERN stack application which utilizes a MVC (Model Views Controller) architectural pattern. It is designed for the Client Server and API Server to run on two separate ports simultaneously. The boilerplate mostly focuses on the API Server file structure, while the Client Server was created utilizing [Next.js](https://nextjs.org).
 
-The application opens up a standard looking [create-react-app](https://github.com/facebook/create-react-app#creating-an-app) landing page.
+The application opens up a standard looking [Next.js](https://nextjs.org) landing page.
 
-![create-react-app landing page](https://user-images.githubusercontent.com/37916145/52542726-6cfed700-2d68-11e9-90d5-09fd0effac1a.PNG)
+![Next JS default landing page](https://github.com/user-attachments/assets/cfca37c5-fee9-4f5c-8d6e-655c10950e55)
 
 If you look inside of your application's terminal, you should see a 'Hello World!' output.
 
@@ -15,9 +16,9 @@ If you look inside of your application's terminal, you should see a 'Hello World
 
 If you open your console in Chrome's Dev Tools, you should also see a message from the API server. This is to show that the client has received back information from the API.
 
-![create-react-app landing page with dev tools](https://user-images.githubusercontent.com/37916145/52542819-51480080-2d69-11e9-81d0-c2f0679ee67b.PNG)
+![Next JS default landing page with message](https://github.com/user-attachments/assets/2493ac3c-46e9-4853-9a92-bad7d41bcc0f)
 
-This was made for myself to use because I like the file structure. Anyone else is free to use it at their own risk. I do NOT claim any rights to any technologies used. Including, but not limited to: [MongoDB](https://www.mongodb.com/what-is-mongodb), [mongoose.js](https://mongoosejs.com/) ODM, [Express.js](https://expressjs.com/), [React.js](https://reactjs.org/), [create-react-app](https://github.com/facebook/create-react-app#creating-an-app) or [Node.js](https://nodejs.org/en/).
+This was made for myself to use because I like the file structure. Anyone else is free to use it at their own risk. I do NOT claim any rights to any technologies used. Including, but not limited to: [MongoDB](https://www.mongodb.com/what-is-mongodb), [mongoose.js](https://mongoosejs.com/) ODM, [Express.js](https://expressjs.com/), [React.js](https://reactjs.org/), [Next.js](https://nextjs.org) or [Node.js](https://nodejs.org/en/).
 
 ## The API
 
@@ -29,7 +30,7 @@ This application is utilizing a MVC architectural pattern. You can view the flow
 
 This is designed to be a MERN ([MongoDB](https://www.mongodb.com/what-is-mongodb), [Express.js](https://expressjs.com/), [React.js](https://reactjs.org/) and [Node.js](https://nodejs.org/en/)) stack application by example. However, it can easily be converted to a SERN stack by using [MySQL](https://www.mysql.com/) and [Sequlize.js](http://docs.sequelizejs.com/).
 
-The '[/client](./client)' was created using [create-react-app](https://github.com/facebook/create-react-app#creating-an-app).
+The '[/client](./client)' was created using [Next.js](https://nextjs.org).
 
 The MERN example utilizes [mongoose.js](https://mongoosejs.com/) ODM.
 
@@ -62,15 +63,15 @@ I utilize Yarn as my package manager rather than Node's standard npm. So I will 
 3. Once inside of the application's root directory, install the API server's depencencies. To do so, run:
 
     ```
-    yarn install
+    npm install
     ```
 
-4. After your API's dependencies are installed, it's time to install your Client server's dependencies. To do so, cd into the client folder and run yarn install again. Like so:
+4. After your API's dependencies are installed, it's time to install your Client server's dependencies. To do so, cd into the client folder and run npm install again. Like so:
 
     ```
     cd client
 
-    yarn install
+    npm install
     ```
     * *Note* - This is done twice because our Client Server and API Server are running on two different ports and have different dependencies. This is to make sure that all dependencies for both servers are installed.
 
@@ -79,7 +80,7 @@ I utilize Yarn as my package manager rather than Node's standard npm. So I will 
     ```
     cd ..
 
-    yarn start
+    npm start
     ```
 
     * *Note* - Once you have started the application, there is no need to open it within the browser. The application will automatically start the API server, then start the React Development server. Once the React Development server has compiled, the application will open automatically in the broswer.
