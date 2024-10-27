@@ -46,7 +46,8 @@ module.exports = {
 
         // Example:
         return res.send({
-            message: 'Hello World Function Activated!'
+            message: 'Hello World Function Activated!',
+            status: 200
         });
     }, // <-------------- Make sure your functions end with a comma and NOT a semi-colon
 

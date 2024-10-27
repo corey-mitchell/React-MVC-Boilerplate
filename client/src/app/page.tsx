@@ -1,7 +1,19 @@
+"use client" // This is just here for the useEffect to display the test API. Remove if needed.
+
+import { useEffect } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
+
+  useEffect(() => {
+    // Test call
+    fetch(`/api/test/hello-world`)
+      .then(res => res.json())
+      .then(res => console.log(res.message))
+      .catch(err => console.error(err));
+  }, []);
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
