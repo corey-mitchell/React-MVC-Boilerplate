@@ -6,11 +6,11 @@
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "install": "cd client && yarn install",
-    "build": "cd client && yarn run build",
-    "heroku-postbuild": "cd client && yarn install && yarn run build"
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"cd client && npm run dev\"",
+    "client": "cd client && npm run dev",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
@@ -30,10 +30,10 @@
   },
   "homepage": "https://github.com/corey-mitchell/React-MVC-Boilerplate#readme",
   "dependencies": {
-    "concurrently": "^4.1.0",
+    "concurrently": "^9.0.1",
     "express": "^4.20.0",
     "global": "^4.3.2",
     "mongoose": "^5.13.15",
-    "nodemon": "^1.18.10"
+    "nodemon": "^3.1.7"
   }
 }
