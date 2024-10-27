@@ -1,6 +1,6 @@
 {
   "name": "react-mvc-boilerplate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Boilerplate for React using a MVC file structure",
   "main": "server.js",
   "scripts": {
@@ -19,6 +19,8 @@
   "keywords": [
     "React",
     "MVC",
+    "ExpressJS",
+    "NodeJS",
     "Boilerplate"
   ],
   "author": "Corey Mitchell",
